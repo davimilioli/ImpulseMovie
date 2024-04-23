@@ -1,0 +1,18 @@
+<div *ngIf="vitrine" class="vitrine">
+    <div class="vitrine-content">
+        <h2 class="vitrine-tile">{{ title }}</h2>
+        <div class="vitrine-itens">
+            <div *ngFor="let card of vitrine.results" class="vitrine-cards">
+                <a href="/movie/{{card.id}}" class="vitrine-cards-image">
+                    <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/{{card.backdrop_path}}">
+                </a>
+                <div class="vitrine-cards-description">
+                    <a href="">
+                        <h3>{{ card.title }}</h3>
+                    </a>
+                    <p>{{ card.release_date | date: 'dd/MM/yyyy' }}</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<!-- <section>
+    <h1>
+        Buscando por {{searchTerm}}
+    </h1>
+
+    <div *ngIf="listResult">
+        <div *ngIf="listResult.results.length > 0; else elseResult">
+            <h3>Resultados encontrados: {{listResult.total_results}}</h3>
+            <div class="result-container">
+                <div *ngFor="let card of listResult.results" class="result-item">
+                    <a href="/movie/{{card.id}}">
+                        <div *ngIf="card.backdrop_path; else noImage">
+                            <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/{{card.backdrop_path}}">
+                            
+                        </div>
+                        <ng-template #noImage>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsrfDrJCgVnLc3kNoHRGiptiga-JRlV7A0XIEPVN4GvQ&s">
+                        </ng-template>
+                    </a>
+                    <div class="vitrine-cards-description">
+                        <a href="">
+                            <h3>{{ card.title }}</h3>
+                        </a>
+                        <p>{{ card.release_date | date: 'dd/MM/yyyy' }}</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <ng-template #elseResult>
+            <h2>Nenhum resultado encontrado</h2>
+        </ng-template>
+    </div>
+    
+</section> -->
