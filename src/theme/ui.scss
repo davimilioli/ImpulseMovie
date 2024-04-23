@@ -1,0 +1,28 @@
+.btn{
+    padding: .5rem 3rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: var(--border-radius);
+    border: none;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    
+    &.secondary{
+        border: 1px solid var(--primary-color);
+        background: none;
+        
+    }
+
+    &.upper {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+
+    &:hover{
+        opacity: .9;
+        transition: .3s;
+    }
+
+}

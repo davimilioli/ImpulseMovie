@@ -1,0 +1,45 @@
+.banner{
+    .banner-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .banner-list-services{
+            padding: 2rem;
+            ul {
+                display: flex;
+                gap: 1rem;
+                list-style: none;
+                align-items: center;
+                li {
+                    color: #FFF;
+                    border: 1px solid var(--primary-color);
+                    padding: .5rem 2rem;
+                    border-radius: 8px;
+                    font-size: 13px;
+                }
+            }
+
+            h1{
+                color: #FFF;
+                font-size: 2.5rem;
+                margin: 1rem 0;
+                line-height: 1.2;
+            }
+
+            p{
+                color: #FFF;
+                opacity: 0.8;
+            }
+
+            .banner-buttons{
+                display: flex;
+                gap: 10px;
+                margin-top: 3rem;
+
+                .btn{
+                    padding: 1rem 2rem;
+                }
+            }
+        }
+    }
+}

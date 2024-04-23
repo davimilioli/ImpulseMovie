@@ -8,6 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { VitrineComponent } from './components/vitrine/vitrine.component';
 import { MovieDetailComponent } from './pages/movie-detail/movie-detail.component';
 import { ListComponent } from './pages/list/list.component';
+import { HeaderComponent } from './includes/header/header.component';
+import { FooterComponent } from './includes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ListComponent } from './pages/list/list.component';
     HomeComponent,
     VitrineComponent,
     MovieDetailComponent,
-    ListComponent
+    ListComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            a {
+                transition: .3s;
+                opacity: .7;
+                &:hover{
+                    opacity: 1;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
