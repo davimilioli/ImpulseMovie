@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TmdbService } from '../../services/tmdb.service';
 import { Router, RouterLink } from '@angular/router';
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,8 @@ export class HomeComponent {
   typeListVitrine = 'popular'; */
   term?: string = '';
   movies: any[] = [];
+  faCircle = faCircle;
+
 
   constructor(
     private tdmbService: TmdbService,

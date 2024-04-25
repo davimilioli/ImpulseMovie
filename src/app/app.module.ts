@@ -10,6 +10,7 @@ import { MovieDetailComponent } from './pages/movie-detail/movie-detail.componen
 import { ListComponent } from './pages/list/list.component';
 import { HeaderComponent } from './includes/header/header.component';
 import { FooterComponent } from './includes/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './includes/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [
     provideClientHydration()
