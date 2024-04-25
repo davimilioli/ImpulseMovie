@@ -108,3 +108,31 @@
         }
     }
 }
+
+.recommendation{
+    padding: 2rem 0;
+
+    .recommendation-content{
+        .recommendation-titles{
+            color: #FFF;
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+            align-items: center;
+
+            .recommendation-titles-primary{
+                padding-right: 6rem;
+
+                h2{
+                    font-size: 2rem;
+                }
+            }
+
+            h3{
+                text-align: end;
+                color: #313131;
+            }
+        }
+    }
+
+}

@@ -1,3 +1,26 @@
+$breakingpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px
+);
+
+.block-content {
+  width: 100%;
+  max-width: map-get($breakingpoints, xxl); 
+  margin: 0 auto;
+
+  @media screen and (min-width: map-get($breakingpoints, xl)) and (max-width: map-get($breakingpoints, xxl)) {
+    max-width: 1240px;
+  }
+
+  @media(max-width: 767){
+    padding: 1rem 0;
+  }
+}
+
+
 .btn{
     padding: .5rem 3rem;
     background-color: var(--primary-color);
