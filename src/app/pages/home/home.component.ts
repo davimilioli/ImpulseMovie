@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TmdbService } from '../../services/tmdb.service';
 import { Router, RouterLink } from '@angular/router';
-import { faCircle } from '@fortawesome/free-regular-svg-icons';
+import { faCircle, faArrowAltCircleLeft } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +14,7 @@ export class HomeComponent {
   term?: string = '';
   movies: any[] = [];
   faCircle = faCircle;
+  faArrowAltCircleLeft = faArrowAltCircleLeft;
 
 
   constructor(
